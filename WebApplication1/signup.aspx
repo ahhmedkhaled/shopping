@@ -54,7 +54,7 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style4" colspan="4"><strong>
-                    <asp:Label ID="Label1" runat="server" CssClass="auto-style12" Text="Sign up Form"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" CssClass="auto-style12" Text="Sign Up Form" ForeColor="#993399"></asp:Label>
                     </strong></td>
             </tr>
             <tr>
@@ -108,8 +108,8 @@
             <tr>
                 <td class="auto-style5">Gender:</td>
                 <td class="auto-style6">
-                    <asp:CheckBox ID="Male" runat="server" />
-                    <asp:CheckBox ID="Female" runat="server" />
+                    <asp:CheckBox ID="Male" runat="server" Text="Male" />
+                    <asp:CheckBox ID="Female" runat="server" Text="Female" />
                 </td>
                 <td class="auto-style6"></td>
                 <td class="auto-style7"></td>
