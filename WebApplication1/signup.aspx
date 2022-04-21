@@ -10,7 +10,7 @@
             width: 100%;
         }
         .auto-style2 {
-            width: 277px;
+            width: 147px;
         }
         .auto-style3 {
             width: 16px;
@@ -19,7 +19,7 @@
             text-align: center;
         }
         .auto-style5 {
-            width: 277px;
+            width: 147px;
             height: 23px;
         }
         .auto-style6 {
@@ -34,7 +34,7 @@
             text-align: center;
         }
         .auto-style9 {
-            width: 277px;
+            width: 147px;
             height: 26px;
         }
         .auto-style10 {
@@ -46,6 +46,32 @@
         }
         .auto-style12 {
             font-size: x-large;
+        }
+        .auto-style13 {
+            width: 203px;
+        }
+        .auto-style14 {
+            height: 26px;
+            width: 203px;
+        }
+        .auto-style15 {
+            height: 23px;
+            width: 203px;
+        }
+        .auto-style16 {
+            width: 147px;
+            height: 32px;
+        }
+        .auto-style17 {
+            width: 203px;
+            height: 32px;
+        }
+        .auto-style18 {
+            height: 32px;
+        }
+        .auto-style19 {
+            width: 16px;
+            height: 32px;
         }
     </style>
 </head>
@@ -59,55 +85,65 @@
             </tr>
             <tr>
                 <td class="auto-style2">First Name:</td>
-                <td>
-                    <asp:TextBox ID="TextBox2" runat="server" Width="166px"></asp:TextBox>
+                <td class="auto-style13">
+                    <asp:TextBox ID="FirstName" runat="server" Width="166px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="FirstName" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
                 <td class="auto-style3">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">Last Name:</td>
-                <td>
-                    <asp:TextBox ID="TextBox3" runat="server" Width="168px"></asp:TextBox>
+                <td class="auto-style13">
+                    <asp:TextBox ID="SecName" runat="server" Width="168px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="SecName" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
                 <td class="auto-style3">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">Email:</td>
-                <td>
-                    <asp:TextBox ID="TextBox4" runat="server" Width="166px"></asp:TextBox>
+                <td class="auto-style13">
+                    <asp:TextBox ID="Email" runat="server" Width="166px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Email" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
                 <td class="auto-style3">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">Phone:</td>
-                <td>
+                <td class="auto-style13">
                     <asp:TextBox ID="TextBox5" runat="server" Width="162px"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">Password:</td>
-                <td>
-                    <asp:TextBox ID="TextBox6" runat="server" Width="164px"></asp:TextBox>
+                <td class="auto-style16">Password:</td>
+                <td class="auto-style17">
+                    <asp:TextBox ID="Pass" runat="server" Width="164px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style18">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="Pass" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
+                <td class="auto-style19"></td>
             </tr>
             <tr>
                 <td class="auto-style9">Confirm Passwor</td>
-                <td class="auto-style10">
-                    <asp:TextBox ID="TextBox7" runat="server" TextMode="Password" Width="165px"></asp:TextBox>
+                <td class="auto-style14">
+                    <asp:TextBox ID="Cpass" runat="server" TextMode="Password" Width="165px"></asp:TextBox>
                 </td>
-                <td class="auto-style10"></td>
+                <td class="auto-style10">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="Cpass" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
                 <td class="auto-style11"></td>
             </tr>
             <tr>
                 <td class="auto-style5">Gender:</td>
-                <td class="auto-style6">
+                <td class="auto-style15">
                     <asp:CheckBox ID="Male" runat="server" Text="Male" />
                     <asp:CheckBox ID="Female" runat="server" Text="Female" />
                 </td>
