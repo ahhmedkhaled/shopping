@@ -73,6 +73,9 @@
             width: 16px;
             height: 32px;
         }
+        .auto-style20 {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -89,7 +92,7 @@
                     <asp:TextBox ID="FirstName" runat="server" Width="166px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="FirstName" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="FirstName" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red" Font-Size="Small"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style3">&nbsp;</td>
             </tr>
@@ -99,7 +102,7 @@
                     <asp:TextBox ID="SecName" runat="server" Width="168px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="SecName" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="SecName" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red" Font-Size="Small"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style3">&nbsp;</td>
             </tr>
@@ -109,7 +112,7 @@
                     <asp:TextBox ID="Email" runat="server" Width="166px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Email" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Email" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red" Font-Size="Small"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style3">&nbsp;</td>
             </tr>
@@ -127,7 +130,7 @@
                     <asp:TextBox ID="Pass" runat="server" Width="164px"></asp:TextBox>
                 </td>
                 <td class="auto-style18">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="Pass" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="Pass" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red" Font-Size="Small"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style19"></td>
             </tr>
@@ -137,7 +140,7 @@
                     <asp:TextBox ID="Cpass" runat="server" TextMode="Password" Width="165px"></asp:TextBox>
                 </td>
                 <td class="auto-style10">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="Cpass" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="Cpass" ErrorMessage="This is a Required Field!!" Font-Names="Arial" ForeColor="Red" Font-Size="Small"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style11"></td>
             </tr>
@@ -152,7 +155,9 @@
             </tr>
             <tr>
                 <td class="auto-style8" colspan="4">
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
+                    <strong>
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" CssClass="auto-style20" />
+                    </strong>
                 </td>
             </tr>
         </table>
